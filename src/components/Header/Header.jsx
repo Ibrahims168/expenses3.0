@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Header = (props) => {
+ const Header = (props) => {
     const {title , setHeaderTitle} = props
     const changeTitle = function() {
 
