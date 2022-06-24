@@ -1,15 +1,16 @@
 import React from 'react'
 
-const Header = (props) => {
-    const {title} = props
-    const { headerTitle , setHeaderTitle} = props
+export const Header = (props) => {
+    const {title , setHeaderTitle} = props
+    const changeTitle = function() {
 
-    function changeTitle(){
         setHeaderTitle('THIS IS Header TITLE')
-    } 
+    }
 
   return (
-    <div onClick={changeTitle}>{title}</div>
+    <div onClick={changeTitle}>
+        <h1>{title}</h1>
+    </div>
   )
 }
 
